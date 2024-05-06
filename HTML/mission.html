@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecondHand.it: l'usato prende vita</title>
+  <link rel="shortcut icon" href="/MEDIA/logo3.png" type="image/x-icon" />
+  <!-- FAVICON -->
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/mission.css" />
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  </head>
+
+<body>
+  <nav>
+    <div class="main-navbar shadow-sm sticky-top">
+      <div class="top-navbar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block riga1">
+              <!-- logo e testo -->
+
+              <div class="logoSito navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="/MEDIA/logo3.png" alt="" class="d-inline-block align-text-center text-white" />
+                  </a>
+                </div>
+              </div>
+
+              <!-- fine logo e testo -->
+            </div>
+
+            <!-- barra di ricerca -->
+            <div class="col-md-4 my-auto">
+              <form role="search">
+                <div class="input-group">
+                  <input type="search" placeholder="Cerca su Second Hand" class="form-control" />
+                  <!-- inizio button -->
+                  <button type="button" class="btn" id="tastocerca" data-mdb-ripple-init>
+                    <i class="fas fa-search-plus p-1">Cerca </i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                  </button>
+                  <!-- fine button -->
+                </div>
+                <!-- fine barra di ricerca -->
+              </form>
+            </div>
+
+
+            <div class="col-md-5 my-auto">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                    </svg>
+                    <i class="fa fa-shopping-cart"></i> Carrello (0)
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                    </svg>
+                    <i class="fa fa-heart"></i> Lista Desideri (0)
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                    <i class="fa fa-user"></i> Accedi/Registrati
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Il mio account</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="fa fa-list"></i> I miei ordini</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="fa fa-heart"></i> La mia lista desideri</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> Metodi di
+                        pagamento</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> Esci</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INIZIO MENU-->
+      <div class="menu1">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li id="menu-item-1"><a href="#">Donna</a></li>
+          <li id="menu-item-2"><a href="#">Uomo</a></li>
+          <li id="menu-item-3"><a href="#">Bambino</a></li>
+          <li id="menu-item-4"><a href="./brand.html">Brand</a></li>
+          <li id="menu-item-5"><a href="#">Saldi e Offerte</a></li>
+          <li id="menu-item-5"><a href="./mission.html">Mission</a></li>
+
+          <div class="submenu">
+            <div class="mega-menu">
+              <div class="children">
+                <figure class="media">
+                  <!--Mettere immagine che selezionamo-->
+                  <img src="/MEDIA/abbigliamento.png" alt="" />
+                </figure>
+              </div>
+              <div class="children">
+                <h3><b>ABBIGLIAMENTO</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">Abiti</a></li>
+                  <li><a href="#">Giacche & Blazer</a></li>
+                  <li><a href="#">Camicie & Top</a></li>
+                  <li><a href="#">Maglieria</a></li>
+                  <li><a href="#">T-shirt & Felpe</a></li>
+                  <li><a href="#">Gonne & Pantaloni</a></li>
+                </ul>
+              </div>
+              <div class="children">
+                <h3><b>BORSE</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">Borse a Mano</a></li>
+                  <li><a href="#">Borse a Tracolla</a></li>
+                  <li><a href="#">Pochette</a></li>
+                  <li><a href="#">Borse Shopper</a></li>
+                  <li><a href="#">Zaini</a></li>
+                </ul>
+              </div>
+              <div class="children">
+                <h3><b>SCARPE</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">Scarpe col Tacco</a></li>
+                  <li><a href="#">Stivali</a></li>
+                  <li><a href="#">Sandali</a></li>
+                  <li><a href="#">Sneakers</a></li>
+                  <li><a href="#">Ciabatte</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="submenu2">
+            <div class="mega-menu">
+              <div class="children">
+                <figure class="media">
+                  <!--Mettere immagine che selezionamo-->
+                  <img src="/MEDIA/uomo.png" alt="" />
+                </figure>
+              </div>
+              <div class="children">
+                <h3><b>ABBIGLIAMENTO</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">T-shirt & Felpe</a></li>
+                  <li><a href="#">Giacche & Cappotti</a></li>
+                  <li><a href="#">Camicie</a></li>
+                  <li><a href="#">Jeans & Pantaloni</a></li>
+                  <li><a href="#">Tute</a></li>
+                  <li><a href="#">Pullover & Cardigan</a></li>
+                </ul>
+              </div>
+              <div class="children">
+                <h3><b>BORSE</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">Marsupi</a></li>
+                  <li><a href="#">Zaini</a></li>
+                  <li><a href="#">Pouch</a></li>
+                  <li><a href="#">Borse da viaggio</a></li>
+                </ul>
+              </div>
+              <div class="children">
+                <h3><b>SCARPE</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">Mocassini</a></li>
+                  <li><a href="#">Sneakers</a></li>
+                  <li><a href="#">Stringate</a></li>
+                  <li><a href="#">Stivali</a></li>
+                  <li><a href="#">Ciabatte</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="submenu3">
+            <div class="mega-menu">
+              <div class="children">
+                <figure class="media">
+                  <!--Mettere immagine che selezionamo-->
+                  <img src="/MEDIA/bambini.png" alt="" />
+                </figure>
+              </div>
+              <div class="children">
+                <h3><b>DA 0 A 6 ANNI</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">T-shirts & Felpe</a></li>
+                  <li><a href="#">Pantaloni</a></li>
+                  <li><a href="#">Tute</a></li>
+                  <li><a href="#">Intimo</a></li>
+                  <li><a href="#">Pigiami</a></li>
+                  <li><a href="#">Giubbotti</a></li>
+                </ul>
+              </div>
+              <div class="children">
+                <h3><b>DA 6 A 10 ANNI</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">T-shirts & Felpe</a></li>
+                  <li><a href="#">Pantaloni</a></li>
+                  <li><a href="#">Tute</a></li>
+                  <li><a href="#">Intimo</a></li>
+                  <li><a href="#">Pigiami</a></li>
+                  <li><a href="#">Giubbotti</a></li>
+                </ul>
+              </div>
+              <div class="children">
+                <h3><b>SCARPE & ACCESSORI</b></h3>
+                <ul class="sub-menu">
+                  <li><a href="#">Sneakers</a></li>
+                  <li><a href="#">Sandali</a></li>
+                  <li><a href="#">Pigiami</a></li>
+                  <li><a href="#">Cappelli & Sciarpe</a></li>
+                  <li><a href="#">Cinture</a></li>
+                  <li><a href="#">Ciabatte</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- inizio mission -->
+<div class="mask">
+  <div class="wrapper">
+  <div class="left column">
+
+      <!--contenuto 1-->
+      <div class="content first">
+          <h2>Mission</h2>
+          <p>Get cool with blue</p>
+          <a href="#" role="button">more</a>
+      </div>
+
+      <!--contenuto 2-->
+      <div class="content second">
+          <h2>Crimson Spring</h2>
+          <p>Red is not a crime</p>
+          <a href="#" role="button">more</a>
+      </div>
+
+      <!--contenuto 3-->
+      <div class="content third">
+          <h2>Mida's Heir</h2>
+          <p>Be more with a touch</p>
+          <a href="#" role="button">more</a>
+      </div>
+
+
+  </div>
+  <div class="right column">
+      <div class="pic first"></div>
+      <div class="pic second"></div>
+      <div class="pic third"></div>
+  </div>
+</div>
+</div>
+
+<!-- fine mission -->
+  
+  <script src="/JS/script.js"></script>
+  <script src="/JS/mission.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
